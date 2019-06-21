@@ -3,12 +3,18 @@ As a Caasp developer, I need to learn GO language. While I have an opportunity t
 I can deploy nodes in cloud easily by this project. If I can create available nodes in AWS by this projects. Manually I can try to cluster the available AWS nodes for Kubernetes nodes.
 
 ``` 
-Prerequisites: 
-1. Learning GO language 
-2. Learning AWS
+go get -d github.com/suseclee/heckweek
+```
 
-Goal of this project in hackweek18:
-1. deploying nodes in AWS using GO language
+webService
+```
+cd webService; go build .; ./webservice
+localhost:3000 in webBrowser
 
-Post Project(if feasible): 
-1. Manually trying to add AWS nodes in kubenetes cluster ```
+```
+logAnalyzer
+```
+cd logAnalyzer 
+go run  . -h
+go run .
+```
