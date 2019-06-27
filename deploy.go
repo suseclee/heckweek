@@ -80,8 +80,8 @@ func newRootCmd() *cobra.Command {
 	register(cmd.PersistentFlags(), "v")
 
 	return cmd
-}
 
+}
 func register(local *pflag.FlagSet, globalName string) {
 	if f := flag.CommandLine.Lookup(globalName); f != nil {
 		pflagFlag := pflag.PFlagFromGoFlag(f)
@@ -102,4 +102,3 @@ func main() {
 		os.Exit(1)
 	}
 }
-

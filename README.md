@@ -11,4 +11,24 @@ Goal of this project in hackweek18:
 1. deploying nodes in AWS using GO language
 
 Post Project(if feasible): 
-1. Manually trying to add AWS nodes in kubenetes cluster ```
+1. Manually trying to add AWS nodes in kubenetes cluster 
+```
+
+### Install asw libraries
+```
+go get -u github.com/aws/aws-sdk-go/aws  
+go get -u github.com/aws/aws-sdk-go/aws/session  
+go get -u github.com/aws/aws-sdk-go/service/ec2  
+
+```
+### In order to access aws, you need to add the following in .bashrc file
+```
+### AWS Access Through Go Libraries
+export AWS_REGION=<your region>
+export AWS_ACCESS_KEY_ID=<your access id>
+export AWS_SECRET_ACCESS_KEY=<your secret access key>
+```
+source ~/.bashrc
+How to find the id and key: https://help.bittitan.com/hc/en-us/articles/115008255268-How-do-I-find-my-AWS-Access-Key-and-Secret-Access-Key-
+
+
