@@ -31,4 +31,10 @@ export AWS_SECRET_ACCESS_KEY=<your secret access key>
 source ~/.bashrc
 How to find the id and key: https://help.bittitan.com/hc/en-us/articles/115008255268-How-do-I-find-my-AWS-Access-Key-and-Secret-Access-Key-
 
+### To acess instances
+Downloading a pem file after creating Key Pairs from Network & Seurity  
+Getting ip/fqdn from ```go run info.go```  
+```
+ssh -vvv -i heckweek.pem ec2-user@ec2-54-188-7-246.us-west-2.compute.amazonaws.com
 
+```
