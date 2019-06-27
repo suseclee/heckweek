@@ -22,6 +22,8 @@ func main() {
         // An Amazon Linux AMI ID for t2.micro instances in the us-west-2 region
         ImageId:      aws.String("ami-0de02b68de6f5f732"),
         InstanceType: aws.String("t2.micro"),
+        SecurityGroupIds: aws.StringSlice([]string{"sg-a0b2e1ec"}),
+        KeyName: aws.String("heckweek"),
         MinCount:     aws.Int64(1),
         MaxCount:     aws.Int64(1),
     })
